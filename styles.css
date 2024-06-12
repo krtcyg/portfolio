@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.pic {
+    border: 5px solid black;
+}
+
+.bg-cover {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.slide-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/prelim-bg.jpg);
+}
+
+.slide-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/midterm-bg.jpg);
+}
+
+.slide-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/finals-bg.jpg);
+}
+
+.intro-text {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.intro-text p {
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+
+.project-item img, video {
+    width: 100%;
+    height: auto;
+}
+
+.shadow-on-hover {
+    transition: all 0.3s;
+}
+
+.shadow-on-hover:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul a {
+    text-decoration: none;
+}
+
+.footer-top {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.footer-bot {
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.icons {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+}
+
+.icons:hover, .icon-slide {
+    animation-play-state: paused;
+}
+
+.icon-slide {
+    display: inline-block;
+    animation: 20s slide infinite linear;
+}
+
+.icon-slide img {
+    height: 100px;
+    margin: 0 40px;
+}
